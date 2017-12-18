@@ -89,6 +89,8 @@ img {
   padding: 0.5em 2em;
 }
 
+
+
 /* ---- Page Elements ---- */
 
 .logo {
@@ -98,6 +100,36 @@ img {
 .sub-title {
   margin: 10px 0 5px 0;
 }
+
+.fa-exclamation {
+  font-size: 3em;
+  color: #f06d68;
+  position: absolute;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+  padding: 0.75em 0 0.25em 1em;
+	background: rgba(240,109,104, .80);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.fa-exclamation {
+  position: absolute;
+  top: -15px;
+  right: 8px;
+}
+
 
 /* ---- Images ---- */
 
