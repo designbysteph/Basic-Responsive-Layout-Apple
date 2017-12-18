@@ -1,0 +1,198 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* { box-sizing: border-box;}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  color: #000;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #F06D68;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .95em;
+  font-weight: 400;
+}
+
+a {
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #424242;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #F06D68;
+}
+
+a:visited {
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+  /* outline: 1px red solid; */
+  text-align: center;
+}
+
+.title,
+.main-nav li {
+  /* outline: 1px blue solid; */
+  padding: 10px;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+  background-color: #E6E9ED;
+  text-align: center;
+  padding: 30px 0 40px 0;
+  margin: 20px 0 20px 0;
+}
+
+.main-footer {
+  background-color: #E6E9ED;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  margin-top: 10px;
+}
+
+.col {
+  padding: 0.5em 2em;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+  max-width: 150px;
+}
+
+.sub-title {
+  margin: 10px 0 5px 0;
+}
+
+/* ---- Images ---- */
+
+.feat-img {
+  border: 1px #D3D3D3 solid;
+  padding: 20px;
+}
+
+/* =================================
+  MEDIA QUERIES
+==================================== */
+
+/* ---- TABLET ---- */
+@media (min-width: 769px) {
+
+ /* ---- Navigation ---- */
+
+ .title {
+   float: left;
+ }
+
+ .main-nav {
+   float: right;
+ }
+
+ .main-nav li {
+   display: inline-block;
+   margin-left: 5px;
+ }
+
+ /* ---- Layout Containers ---- */
+.wrapper {
+   width: 90%;
+   margin: 0 auto;
+}
+
+.left,
+.middle {
+   width: 50%;
+   float: left;
+ }
+ /* ---- Float clearfix ---- */
+
+ .clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+ }
+
+}
+
+/* ---- LARGE SCREEN ---- */
+@media (min-width: 1025px) {
+
+/* ---- Layout Containers ---- */
+  .wrapper {
+    width: 80%;
+    max-width: 1150px;
+  }
+
+  .banner {
+    padding: 50px 0;
+  }
+
+  .col {
+    padding: 0.5em 1em;
+  }
+
+  .left,
+  .right {
+    width: 30%;
+  }
+
+  .middle {
+    width: 40%;
+  }
+
+  .right {
+    float: right;
+  }
+
+  /* ---- Page Elements ---- */
+
+  .logo {
+    max-width: 700px;
+  }
+
+  .sub-title {
+    font-size: 2.3em;
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    font-size: 1.3em;
+
+  }
+
+}

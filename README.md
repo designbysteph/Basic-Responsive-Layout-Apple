@@ -1,1 +1,1 @@
-# Basic Responsive Layout Apple
+# apple-computers-layout
